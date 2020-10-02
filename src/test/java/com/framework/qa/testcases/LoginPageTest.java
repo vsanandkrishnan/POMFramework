@@ -48,6 +48,11 @@ public class LoginPageTest extends TestBase {
 	 homePage=	login.login(username, password);
 
 	}
+	
+	@Test
+	public void loginDemo() {
+		System.out.println("Login Demo");
+	}
 
 	@AfterMethod
 	public void tearDown() {
