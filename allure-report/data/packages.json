@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.framework.qa.testcases.LoginPageTest",
+    "children" : [ {
+      "name" : "loginDemo",
+      "uid" : "5a42a0a205c3afbb",
+      "parentUid" : "39261b01cea3a72ca2128a4af8107143",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601829960908,
+        "stop" : 1601829960917,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginPageTitleTest",
+      "uid" : "54ece4c9ebae54b",
+      "parentUid" : "39261b01cea3a72ca2128a4af8107143",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601829979783,
+        "stop" : 1601829979889,
+        "duration" : 106
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "crmLogoTest",
+      "uid" : "a2fcb187f6a19ec1",
+      "parentUid" : "39261b01cea3a72ca2128a4af8107143",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601830000724,
+        "stop" : 1601830000941,
+        "duration" : 217
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginTest",
+      "uid" : "e89fe2b2651703f7",
+      "parentUid" : "39261b01cea3a72ca2128a4af8107143",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601830020324,
+        "stop" : 1601830038688,
+        "duration" : 18364
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.framework.qa.testcases.LoginPageTest"
+  } ]
+}

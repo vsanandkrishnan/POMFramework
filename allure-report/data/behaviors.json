@@ -1,0 +1,69 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "loginDemo",
+    "uid" : "5a42a0a205c3afbb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1601829960908,
+      "stop" : 1601829960917,
+      "duration" : 9
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Story Name: To Check login page title.",
+    "children" : [ {
+      "name" : "Verify Login page title test.",
+      "uid" : "54ece4c9ebae54b",
+      "parentUid" : "2f2d9bc82d58c3bf7d429098d8f525ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601829979783,
+        "stop" : 1601829979889,
+        "duration" : 106
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2f2d9bc82d58c3bf7d429098d8f525ed"
+  }, {
+    "name" : "Story Name: To Check signUp link",
+    "children" : [ {
+      "name" : "verify the signup link",
+      "uid" : "a2fcb187f6a19ec1",
+      "parentUid" : "a3d54ab0f671cd2e6e8ee0529831ac98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601830000724,
+        "stop" : 1601830000941,
+        "duration" : 217
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a3d54ab0f671cd2e6e8ee0529831ac98"
+  }, {
+    "name" : "Story Name: To check Login functionality",
+    "children" : [ {
+      "name" : "Login into app test",
+      "uid" : "e89fe2b2651703f7",
+      "parentUid" : "0ff6760ba458e7766c468722f5553cc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1601830020324,
+        "stop" : 1601830038688,
+        "duration" : 18364
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0ff6760ba458e7766c468722f5553cc2"
+  } ]
+}

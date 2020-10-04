@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Free CRM Automation Test Suite",
+    "children" : [ {
+      "name" : "Free CRM Application Test",
+      "children" : [ {
+        "name" : "com.framework.qa.testcases.LoginPageTest",
+        "children" : [ {
+          "name" : "loginDemo",
+          "uid" : "5a42a0a205c3afbb",
+          "parentUid" : "5cfbd2c45d2a34e7779091d178d11aba",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601829960908,
+            "stop" : 1601829960917,
+            "duration" : 9
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify Login page title test.",
+          "uid" : "54ece4c9ebae54b",
+          "parentUid" : "5cfbd2c45d2a34e7779091d178d11aba",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601829979783,
+            "stop" : 1601829979889,
+            "duration" : 106
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "verify the signup link",
+          "uid" : "a2fcb187f6a19ec1",
+          "parentUid" : "5cfbd2c45d2a34e7779091d178d11aba",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601830000724,
+            "stop" : 1601830000941,
+            "duration" : 217
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Login into app test",
+          "uid" : "e89fe2b2651703f7",
+          "parentUid" : "5cfbd2c45d2a34e7779091d178d11aba",
+          "status" : "passed",
+          "time" : {
+            "start" : 1601830020324,
+            "stop" : 1601830038688,
+            "duration" : 18364
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5cfbd2c45d2a34e7779091d178d11aba"
+      } ],
+      "uid" : "fceb3922b848b309c5347f661dd5acc7"
+    } ],
+    "uid" : "0b47b37802fdf7841bc8092da0a6c90f"
+  } ]
+}

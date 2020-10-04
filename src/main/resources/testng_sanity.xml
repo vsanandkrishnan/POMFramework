@@ -4,7 +4,7 @@
 	<test name="Free CRM Application Test" >
 		<classes>
 			<class name="com.framework.qa.testcases.LoginPageTest" />
-		    <class name="com.framework.qa.testcases.HomePageTest" /> 
+		  <!--   <class name="com.framework.qa.testcases.HomePageTest" />  -->
 		</classes>
 	</test>
 </suite>

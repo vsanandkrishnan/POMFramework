@@ -1,0 +1,37 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "2f2d9bc82d58c3bf7d429098d8f525ed",
+    "name" : "Story Name: To Check login page title.",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a3d54ab0f671cd2e6e8ee0529831ac98",
+    "name" : "Story Name: To Check signUp link",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "0ff6760ba458e7766c468722f5553cc2",
+    "name" : "Story Name: To check Login functionality",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

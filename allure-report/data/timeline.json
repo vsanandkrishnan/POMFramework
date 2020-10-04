@@ -1,0 +1,65 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-OU50UTA",
+    "children" : [ {
+      "name" : "4088@DESKTOP-OU50UTA.main(1)",
+      "children" : [ {
+        "name" : "loginDemo",
+        "uid" : "5a42a0a205c3afbb",
+        "parentUid" : "d77e5870d548bba7012cad6c304e5f7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601829960908,
+          "stop" : 1601829960917,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login into app test",
+        "uid" : "e89fe2b2651703f7",
+        "parentUid" : "d77e5870d548bba7012cad6c304e5f7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601830020324,
+          "stop" : 1601830038688,
+          "duration" : 18364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "verify the signup link",
+        "uid" : "a2fcb187f6a19ec1",
+        "parentUid" : "d77e5870d548bba7012cad6c304e5f7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601830000724,
+          "stop" : 1601830000941,
+          "duration" : 217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Login page title test.",
+        "uid" : "54ece4c9ebae54b",
+        "parentUid" : "d77e5870d548bba7012cad6c304e5f7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1601829979783,
+          "stop" : 1601829979889,
+          "duration" : 106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d77e5870d548bba7012cad6c304e5f7e"
+    } ],
+    "uid" : "4d44370cd11b926d8acf11f29d83a603"
+  } ]
+}
