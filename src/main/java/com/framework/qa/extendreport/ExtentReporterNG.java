@@ -1,7 +1,3 @@
-/*
- * @autor : Naveen Khunteta
- * 
- */
 package com.framework.qa.extendreport;
 
 import java.io.File;

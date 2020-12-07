@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.framework.qa.testcases.LoginPageTest">
         <methods>
+          <include name="crmLogoTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.framework.qa.testcases.LoginPageTest -->

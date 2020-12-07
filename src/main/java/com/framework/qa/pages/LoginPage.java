@@ -32,19 +32,18 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver,this);
 	}
 	
-	//Different actions
-	@Step("getting login page title")
+
 	public String validateLoginPageTitle() {		
 		return driver.getTitle();	
 	}
 	
-	@Step("Verify the crmLogo after login")
+
 	public boolean validateCRMImage() {		
 		boolean isDisplayed= crmLogo.isDisplayed();
 		return isDisplayed;		
 	}
 	
-	@Step("Login with username:{0} and password:{1}")
+
 	public HomePage login(String username,String password) {
 		this.username.sendKeys(username);
 		this.password.sendKeys(password);

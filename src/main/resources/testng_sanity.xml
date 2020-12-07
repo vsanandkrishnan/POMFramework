@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
-<suite name="Free CRM Automation Test Suite" verbose="5">
+<suite name="Free CRM Automation Test Suite" preserve-order="true" parallel="false">
 	<test name="Free CRM Application Test" >
 		<classes>
 			<class name="com.framework.qa.testcases.LoginPageTest" />
