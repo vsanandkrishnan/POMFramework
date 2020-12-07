@@ -5,9 +5,7 @@
     <classes>
       <class name="com.framework.qa.testcases.LoginPageTest">
         <methods>
-          <include name="crmLogoTest"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.framework.qa.testcases.LoginPageTest -->

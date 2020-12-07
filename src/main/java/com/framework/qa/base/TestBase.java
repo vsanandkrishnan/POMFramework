@@ -8,7 +8,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.framework.qa.utils.TestUtil;
@@ -20,9 +25,12 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
-  
-	public  static EventFiringWebDriver e_driver;
+
+	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static ChromeOptions coptions;
+	public static FirefoxOptions foptions;
+	public static EdgeOptions moptions;
 
 	public TestBase() {
 		try {
@@ -40,28 +48,37 @@ public class TestBase {
 	public static void initialisation() {
 		String browserName = prop.getProperty("browser");
 		String URL = prop.getProperty("url");
+		boolean headlessFlag = Boolean.parseBoolean(prop.getProperty("headless"));
 		if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();			
+			coptions = new ChromeOptions();
+			coptions.setHeadless(headlessFlag);
+			driver = new ChromeDriver(coptions);
+			
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			foptions = new FirefoxOptions();
+			foptions.setHeadless(headlessFlag);
+			driver = new FirefoxDriver(foptions);
+		}else if(browserName.equals("medge")) {
+			WebDriverManager.edgedriver().setup();
+			driver= new EdgeDriver();	
 		}
-		
+
 		e_driver = new EventFiringWebDriver(driver);
-		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		// Now create object of EventListerHandler to register it with
+		// EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIME_OUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_TIME_OUT, TimeUnit.SECONDS);
-		
+
 		driver.get(URL);
-		
-		
+
 	}
 
 }
