@@ -31,79 +31,92 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">17.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">149.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">com.framework.qa.testcases.LoginPageTest</td><td><a href="#m1"><b>setUp</b>  </a></td><td class="numi">1</td><td>1607324444127</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.framework.qa.testcases.LoginPageTest</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1607324461226</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.framework.qa.testcases.LoginPageTest</td><td><a href="#m3"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1607324461145</td><td class="numi">31</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.framework.qa.testcases.ContactsPageTest</td><td><a href="#m1"><b>selectContactByNameTest</b>  </a></td><td class="numi">1</td><td>1631001072745</td><td class="numi">50352</td></tr><tr class="failedodd"><td><a href="#m2"><b>selectMultipleContactsByNameTest</b>  </a></td><td class="numi">1</td><td>1631001137094</td><td class="numi">50269</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.framework.qa.testcases.ContactsPageTest</td><td><a href="#m3"><b>verifyContactsLabelTest</b>  </a></td><td class="numi">1</td><td>1631001057365</td><td class="numi">141</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.framework.qa.testcases.LoginPageTest:setUp</h2>
+<h2 id="m1">com.framework.qa.testcases.ContactsPageTest:selectContactByNameTest</h2>
 <div style="padding-left:3em">
-<p>unknown error: cannot find MSEdge binary
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td//a[contains(text(),&apos;Aaa Chhii&apos;)]/../../td[1]&quot;}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-OU50UTA&apos;, ip: &apos;10.10.0.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: driver.version: EdgeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00C51503+3413251]
-	Ordinal0 [0x00A01208+987656]
-	Ordinal0 [0x0097EFC0+454592]
-	Ordinal0 [0x0097CD8D+445837]
-	Ordinal0 [0x009A49BA+608698]
-	Ordinal0 [0x009A438E+607118]
-	Ordinal0 [0x009A076B+591723]
-	Ordinal0 [0x0098545D+480349]
-	Ordinal0 [0x0098620A+483850]
-	Ordinal0 [0x009861A7+483751]
-	Ordinal0 [0x00B604FC+2426108]
-	GetHandleVerifier [0x00D60781+1000241]
-	GetHandleVerifier [0x00D6E32F+1056479]
-	GetHandleVerifier [0x00D6128F+1003071]
-	Ordinal0 [0x00B58301+2392833]
-	Ordinal0 [0x00B6229B+2433691]
-	Ordinal0 [0x00B6242A+2434090]
-	Ordinal0 [0x00B733C0+2503616]
-	BaseThreadInitThunk [0x753F3744+36]
-	RtlSetCurrentTransaction [0x7792A064+212]
-	RtlSetCurrentTransaction [0x7792A02F+159]
-</p>
+System info: host: &apos;LAPTOP-H1QUMA8Q&apos;, ip: &apos;192.168.18.152&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\ANANDK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab081966c31428d43670f4ddd6031bbd
+*** Element info: {Using=xpath, value=//td//a[contains(text(),&apos;Aaa Chhii&apos;)]/../../td[1]}</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 <br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-<br/>at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-<br/>at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-<br/>at com.framework.qa.base.TestBase.initialisation(TestBase.java:65)
-<br/>at com.framework.qa.testcases.LoginPageTest.setUp(LoginPageTest.java:25)
-<br/>27 lines not shown
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy21.findElement(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+<br/>at com.framework.qa.pages.ContactPage.selectContacts(ContactPage.java:45)
+<br/>at com.framework.qa.testcases.ContactsPageTest.selectContactByNameTest(ContactsPageTest.java:53)
+<br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.framework.qa.testcases.LoginPageTest:tearDown</h2>
+<h2 id="m2">com.framework.qa.testcases.ContactsPageTest:selectMultipleContactsByNameTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td//a[contains(text(),&apos;Aaa Chhii&apos;)]/../../td[1]&quot;}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-H1QUMA8Q&apos;, ip: &apos;192.168.18.152&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\ANANDK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b85c3860bcd88181bccadc2118148030
+*** Element info: {Using=xpath, value=//td//a[contains(text(),&apos;Aaa Chhii&apos;)]/../../td[1]}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy21.findElement(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+<br/>at com.framework.qa.pages.ContactPage.selectContacts(ContactPage.java:45)
+<br/>at com.framework.qa.testcases.ContactsPageTest.selectMultipleContactsByNameTest(ContactsPageTest.java:60)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.framework.qa.testcases.LoginPageTest:loginTest</h2>
+<h2 id="m3">com.framework.qa.testcases.ContactsPageTest:verifyContactsLabelTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

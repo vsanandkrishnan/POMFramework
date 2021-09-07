@@ -41,27 +41,27 @@ public class ContactsPageTest extends TestBase{
 	}
 	
 	
-	@Test(priority = 1,enabled = false)
+	@Test(priority = 1,enabled = true)
 	public void verifyContactsLabelTest() {
 		boolean flag=contactPage.verifycontactsLabel();
 		Assert.assertTrue(flag,"Contact Label is missing on the contact page!!! FAILED!!");
 		
 	}
 	
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2,enabled = true)
 	public void selectContactByNameTest() {
 		contactPage.selectContacts("Aaa Chhii");
 		
 		
 	}
 	
-	@Test(priority = 3,enabled = false)
+	@Test(priority = 3,enabled = true)
 	public void selectMultipleContactsByNameTest() {
 		contactPage.selectContacts("Aaa Chhii");
 		contactPage.selectContacts("Aaa Handwash");
 	}
 	
-	@Test(priority=4,dataProvider = "getTestData")
+	@Test(priority=4,dataProvider = "getTestData",enabled=false)
 	public void validateCreateNewContactTest(String title,String firstName,String lastName,String company) {
 		homePage.clickOnNewContactLink();
 		contactPage.createNewContact(title, firstName, lastName, company);

@@ -3,12 +3,14 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.framework.qa.testcases.LoginPageTest">
+      <class name="com.framework.qa.testcases.ContactsPageTest">
         <methods>
+          <include name="selectMultipleContactsByNameTest"/>
+          <include name="tearDown"/>
+          <include name="selectContactByNameTest"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.framework.qa.testcases.LoginPageTest -->
+      </class> <!-- com.framework.qa.testcases.ContactsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
